@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 微軟正黑體;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        height: 100%;
+      }
+
+      body {
+        background-image: url("https://picsum.photos/1920/1080/?random=1");
+      }
+      .pic img {
+        width: 90px;
+        top: -50px;
+        right: -45px;
+      }
+
+      .user input ,
+      .password input {
+        text-indent: 20px;
+      }
+
+      .user::before{
+        position: absolute;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f007";
+        top: 8px;
+        left: 10px;
+      }
+
+      .password::before{
+        position: absolute;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f023";
+        top: 8px;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container container-fluid h-100 d-flex justify-content-center align-items-center flex-column w-100"
+    >
+    <div class=" pic text-center position-relative bg-primary">
+      <img class="position-absolute" src="./images/user.png" alt="">
+    </div>
+      <form class="box1 w-50">
+        <div class="box rounded w-100 p-5" style="background-color: rgba(255, 255, 255, 0.5);">
+        <div class="form-group">
+          <p class="text-center h4 pb-2 "> Sing In</p>
+          <label class="user position-relative w-100">
+          <input
+            type="email"
+            class="form-control"
+            id="username"
+            aria-describedby="emailHelp"
+            placeholder="Username"
+          />
+        </label>
+      
+          
+        </div>
+        <div class="form-group">
+          <label class="password position-relative w-100">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+          />
+        </label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+        <div class="form-group form-check pt-3 d-flex justify-content-between">
+          <input type="checkbox" class="form-check-input form-check-inline " id="exampleCheck1">
+          <label class="form-check-label text-white" for="exampleCheck1">Remember me</label>
+          <a class="text-white" href="#">Forgot Password?</a>
+        </div>
+      </form>
+    </div>
+    </div>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
